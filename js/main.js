@@ -16,7 +16,7 @@
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initAccordion)\n/* harmony export */ });\nfunction initAccordion() {\n  const accordionList = document.querySelectorAll('[data-anime=\"accordion\"] dt')\n\n  accordionList[0].classList.toggle('ativo')\n  accordionList[0].nextElementSibling.classList.toggle('ativo')\n\n  function accordionToggle() {\n    this.classList.toggle('ativo')\n    this.nextElementSibling.classList.toggle('ativo')\n  }\n\n  accordionList.forEach((item) => {\n    item.addEventListener('click', accordionToggle)\n  })\n}\n\n\n//# sourceURL=webpack://wonder-beasts/./js/Modules/accordion.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initAccordion)\n/* harmony export */ });\nfunction initAccordion() {\r\n  const accordionList = document.querySelectorAll('[data-anime=\"accordion\"] dt')\r\n\r\n  accordionList[0].classList.toggle('ativo')\r\n  accordionList[0].nextElementSibling.classList.toggle('ativo')\r\n\r\n  function accordionToggle() {\r\n    this.classList.toggle('ativo')\r\n    this.nextElementSibling.classList.toggle('ativo')\r\n  }\r\n\r\n  accordionList.forEach((item) => {\r\n    item.addEventListener('click', accordionToggle)\r\n  })\r\n}\r\n\n\n//# sourceURL=webpack://wonder-beasts/./js/Modules/accordion.js?");
 
 /***/ }),
 
