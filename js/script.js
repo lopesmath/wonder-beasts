@@ -1,6 +1,6 @@
 import ScrollSmooth from './Modules/scrollSmooth.js'
+import Accordion from './Modules/accordion.js'
 import initTabNav from './Modules/tabNav.js'
-import initAccordion from './Modules/accordion.js'
 import initScrollSection from './Modules/scrollSection.js'
 import initModal from './Modules/modal.js'
 import initTooltip from './Modules/tooltip.js'
@@ -11,9 +11,13 @@ import initFetchAnimais from './Modules/fetch-animais.js'
 const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]')
 scrollSmooth.init()
 
+const accordion = new Accordion('[data-anime="accordion"] dt')
+accordion.init()
+
+// [data-anime="accordion"] dt
+
 initTabNav()
 initTooltip()
-initAccordion()
 initScrollSection()
 initModal()
 initDropdown()
