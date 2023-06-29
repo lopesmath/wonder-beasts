@@ -1,0 +1,35 @@
+[data-dropdown] {
+  position: relative;
+}
+
+[data-dropdown] ul {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  background-color: #0e0e1c;
+  border: #8f73b9 3px solid;
+  top: 61px;
+  animation: show-down 0.3s forwards;
+}
+[data-dropdown].ativo > ul {
+  display: block;
+}
+
+[data-dropdown]:hover > ul {
+  display: block;
+  animation: show-down 0.3s forwards;
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+[data-dropdown] ul a {
+  color: #e8e6e3;
+}
