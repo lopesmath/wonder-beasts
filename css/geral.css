@@ -301,6 +301,15 @@ ul {
   .copy {
     margin-bottom: 0px;
   }
+  .contato {
+    grid-column: 1 / -1;
+  }
+  .mapa {
+    margin: 20px 0;
+  }
+  .numeros {
+    grid-template-columns: 1fr;
+  }
 }
 
 [data-semana] {

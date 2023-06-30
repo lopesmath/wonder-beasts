@@ -36,8 +36,10 @@
   border: 10px solid #7352a1;
   box-shadow: 0 0 0 10px #0d0616;
   position: relative;
-  min-width: 300px;
+  max-width: 600px;
+  width: 80vw;
   color: #e8e6e3;
+  box-sizing: border-box;
 }
 
 .fechar {
