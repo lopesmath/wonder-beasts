@@ -30,5 +30,6 @@ export default class Modal {
 
   init() {
     this.addModalEvents()
+    return this
   }
 }
