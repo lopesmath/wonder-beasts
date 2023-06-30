@@ -1,4 +1,4 @@
-import initNumeros from './numeros.js'
+import initNumeros from './number.js'
 
 export default function initFetchAnimais() {
   function createAnimal(animal) {

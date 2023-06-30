@@ -3,9 +3,9 @@ import Accordion from './Modules/accordion.js'
 import TabNav from './Modules/tabNav.js'
 import Modal from './Modules/modal.js'
 import Tooltip from './Modules/tooltip.js'
+import initFetchAnimais from './Modules/fetch-animais.js'
 import initDropdown from './Modules/dropdown.js'
 import initFuncionamento from './Modules/funcionamento.js'
-import initFetchAnimais from './Modules/fetch-animais.js'
 import initScrollSection from './Modules/scrollSection.js'
 
 const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]')
