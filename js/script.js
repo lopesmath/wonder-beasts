@@ -7,7 +7,7 @@ import fetchBitcoin from './Modules/fetch-bitcoin.js'
 import fetchAnimais from './Modules/fetch-animais.js'
 import initDropdown from './Modules/dropdown.js'
 import initFuncionamento from './Modules/funcionamento.js'
-import initScrollSection from './Modules/scrollSection.js'
+import ScrollAnima from './Modules/scrollAnima.js'
 
 const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]')
 scrollSmooth.init()
@@ -31,7 +31,8 @@ modal.init()
 const tooltip = new Tooltip('[data-tooltip]')
 tooltip.init()
 
-initScrollSection()
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]')
+scrollAnima.init()
 
 initDropdown()
 initFuncionamento()
