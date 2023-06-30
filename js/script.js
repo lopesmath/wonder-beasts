@@ -8,6 +8,7 @@ import fetchAnimais from './Modules/fetch-animais.js'
 import dropdownFunction from './Modules/dropdown.js'
 import Functionamento from './modules/funcionamento.js'
 import ScrollAnima from './Modules/scrollAnima.js'
+import SlideNav from './Modules/slide.js'
 
 const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]')
 scrollSmooth.init()
@@ -40,3 +41,7 @@ funcionamento.init()
 dropdownFunction()
 fetchAnimais('../../animaisapi.json', '.numeros-grid')
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco')
+
+const slide = new SlideNav('.slide', '.slide-wrapper')
+slide.init()
+slide.addControl('.custom-controls')
