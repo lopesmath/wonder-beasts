@@ -3,6 +3,7 @@ import Accordion from './Modules/accordion.js'
 import TabNav from './Modules/tabNav.js'
 import Modal from './Modules/modal.js'
 import Tooltip from './Modules/tooltip.js'
+import fetchBitcoin from './Modules/fetch-bitcoin.js'
 import fetchAnimais from './Modules/fetch-animais.js'
 import initDropdown from './Modules/dropdown.js'
 import initFuncionamento from './Modules/funcionamento.js'
@@ -36,3 +37,4 @@ initDropdown()
 initFuncionamento()
 
 fetchAnimais('../../animaisapi.json', '.numeros-grid')
+fetchBitcoin('https://blockchain.info/ticker', '.btc-preco')
