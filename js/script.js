@@ -3,7 +3,7 @@ import Accordion from './Modules/accordion.js'
 import TabNav from './Modules/tabNav.js'
 import Modal from './Modules/modal.js'
 import Tooltip from './Modules/tooltip.js'
-import initFetchAnimais from './Modules/fetch-animais.js'
+import fetchAnimais from './Modules/fetch-animais.js'
 import initDropdown from './Modules/dropdown.js'
 import initFuncionamento from './Modules/funcionamento.js'
 import initScrollSection from './Modules/scrollSection.js'
@@ -34,4 +34,5 @@ initScrollSection()
 
 initDropdown()
 initFuncionamento()
-initFetchAnimais()
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid')
