@@ -5,7 +5,7 @@ import Modal from './Modules/modal.js'
 import Tooltip from './Modules/tooltip.js'
 import fetchBitcoin from './Modules/fetch-bitcoin.js'
 import fetchAnimais from './Modules/fetch-animais.js'
-import initDropdown from './Modules/dropdown.js'
+import dropdownFunction from './Modules/dropdown.js'
 import initFuncionamento from './Modules/funcionamento.js'
 import ScrollAnima from './Modules/scrollAnima.js'
 
@@ -34,7 +34,7 @@ tooltip.init()
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]')
 scrollAnima.init()
 
-initDropdown()
+dropdownFunction()
 initFuncionamento()
 
 fetchAnimais('../../animaisapi.json', '.numeros-grid')
